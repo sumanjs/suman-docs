@@ -6,7 +6,7 @@
 
 ## To contribute and generate docs run:
 
-```console
+```bash
 
 git checkout master # you should already be on the master branch when you clone this repo
 ./pre-publish-gh-pages.sh
