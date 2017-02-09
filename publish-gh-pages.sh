@@ -9,9 +9,7 @@ fi
 git add . &&
 git add -A &&
 git commit -am "Temp commit before publish to gh-pages"
-#git remote add publish git@github.com:sumanjs/suman-docs.git
 git checkout -b gh-pages &&
 git subtree push --prefix public/jsdoc-out origin gh-pages &&
 git checkout master &&
 git branch -D gh-pages
-#git remote rm publish
