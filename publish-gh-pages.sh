@@ -6,6 +6,7 @@ if [[ "$BRANCH" != "master" ]]; then
   exit 1;
 fi
 
+git branch -D gh-pages
 git add . &&
 git add -A &&
 git commit -am "Temp commit before publish to gh-pages"
