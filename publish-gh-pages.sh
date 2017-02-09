@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
-if [[ "$BRANCH" != "dev" ]]; then
-  echo 'Aborting script because you are not on the right git branch (dev).';
+if [[ "$BRANCH" != "master" ]]; then
+  echo 'Aborting script because you are not on the right git branch (master).';
   exit 1;
 fi
 
 git add . &&
 git add -A &&
 git commit -am "Temp commit before publish to gh-pages"
-git remote add publish git@github.com:sumanjs/suman-docs.git
-git checkout -b gh-pages
-git subtree push --prefix public/jsdoc-out publish gh-pages
-git checkout master
+#git remote add publish git@github.com:sumanjs/suman-docs.git
+git checkout -b gh-pages &&
+git subtree push --prefix public/jsdoc-out origin gh-pages &&
+git checkout master &&
 git branch -D gh-pages
-git remote rm publish
+#git remote rm publish
