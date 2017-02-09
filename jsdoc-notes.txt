@@ -1,15 +1,12 @@
 
 http://www.fusioncharts.com/blog/2014/06/extend-jsdoc-api-documentation-through-tutorials/
 
-
 ////////
-=> Close and reopen your terminal to start using nvm / Suman
 
 > http://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on-github-pages
 > https://gist.github.com/cobyism/4730490
 
 instructions on how to generate docs
-
 
 1. jsdoc examples -u examples -d jsdoc-out
 2. mr-doc -s examples/bdd-api -o mr-docs -n "BDD interface"
@@ -69,6 +66,64 @@ change Main to Home =>
       <h1 class="page-title">Suman</h1>
       <h2 class="page-title"> > Superior test runner for Node.js</h2>
       <h3> > A successor to Mocha, Tape and Jasmine </h3>
+
+
+  </div>
+
+
+  10. add this!!
+
+  <body style="background-image:url(images/landscape-mountains-nature-lake.jpg)">
+
+  <div id="main">
+
+      <style>
+
+          /*nav {*/
+          /*background-color: #ffffff;*/
+          /*opacity: 0.2;*/
+          /*filter: alpha(opacity=20); !* For IE8 and earlier *!*/
+          /*}*/
+
+          body {
+              background-image: url(images/suman-9.jpg);
+              background-size: cover; /* <------ */
+              background-repeat: no-repeat;
+              background-position: center center;
+          }
+
+          .page-title {
+              text-indent: 2.0em;
+          }
+
+          li a {
+              color: aquamarine;
+          }
+
+          a {
+              color: aquamarine;
+          }
+
+
+          a:hover {
+              background-color: yellow;
+          }
+
+          /*img {*/
+          /*opacity: 0.5;*/
+          /*filter: alpha(opacity=50); !* For IE8 and earlier *!*/
+          /*}*/
+
+      </style>
+
+      <div>
+          <img src="images/suman.png" width="100%">
+      </div>
+
+      <h1 class="page-title">Suman Home</h1>
+
+      <h3 class="page-title">  Superior test runner for Node.js </h3>
+      <h3 class="page-title">  A successor to Mocha, Tape and Jasmine, and rival to AVA </h3>
 
 
   </div>
