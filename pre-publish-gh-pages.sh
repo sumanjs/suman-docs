@@ -19,5 +19,7 @@ mr-doc -s examples/tdd-api -o mr-docs -n "TDD interface" &&
 mv mr-docs public/jsdoc-out &&
 cp -r public/images public/jsdoc-out &&
 cp public/extra-html/* public/jsdoc-out/ &&
-git branch -D temp
+git checkout master &&
+git branch -D temp &&
+echo "all done"
 
