@@ -1,6 +1,6 @@
 
 
-# How to start contributing to Suman
+# How to start contributing to the Suman documentation
 
 ### Longterm
 
