@@ -6,14 +6,13 @@
   },
   "author": "Olegzandr Denman",
   "license": "ISC",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "directories": {
     "test": "test"
   },
   "devDependencies": {
-
+    "gulp": "^3.9.1",
+    "gulp-typedoc": "^2.0.2"
   },
   "repository": {
     "type": "git",
