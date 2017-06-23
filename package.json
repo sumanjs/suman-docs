@@ -4,15 +4,13 @@
   "scripts": {
     "test": " echo \" >>> Please execute ./test.sh without using npm scripts\n\" && exit 1;"
   },
+  "bin": {
+    "suman-docs": "index.js"
+  },
   "author": "Olegzandr Denman",
   "license": "ISC",
-  "dependencies": {},
   "directories": {
     "test": "test"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-typedoc": "^2.0.2"
   },
   "repository": {
     "type": "git",
@@ -36,8 +34,11 @@
   "bugs": {
     "url": "https://github.com/sumanjs/suman-docs/issues"
   },
-  "bin": {
-    "suman-docs": "index.js"
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typedoc": "^2.0.2",
+    "typedoc": "^0.7.1"
   },
   "homepage": "https://github.com/ORESoftware/suman#readme",
   "description": "Suman is a next-generation Node.js test runner designed to supercede Mocha and rival AVA"

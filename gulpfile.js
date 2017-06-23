@@ -9,11 +9,15 @@ let sumanRoot = path.resolve(__dirname + '/../suman');
 
 gulp.task('typedoc', function() {
   return gulp
-  .src(['src/**/*.ts'])
+  .src([path.resolve(`${sumanRoot}/**/*.ts`)])
   .pipe(typedoc({
     module: 'commonjs',
     target: 'es5',
-    out: 'docs/',
-    name: 'My project title'
+    ignore: '**/node_modules/**',
+    exclude: '**/node_modules/**',
+    out: 'typedocs/',
+    ignoreCompilerErrors: true,
+    version: true,
+    name: 'The SumanJS Documentation'
   }));
 });
