@@ -2,6 +2,8 @@
 
 # The documentation for Suman is located here!
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sumanjs/suman-docs.svg)](https://greenkeeper.io/)
+
 ## The docs should be live at http://sumanjs.github.io/suman_docs 
 
 ## To contribute and generate docs run:
