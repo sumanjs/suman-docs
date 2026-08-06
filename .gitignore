@@ -8,3 +8,7 @@ benchmark-tests
 .DS_Store*
 npm-debug.log*
 
+tmp
+temp
+tmp/worktrees
+temp/worktrees
